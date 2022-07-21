@@ -1,0 +1,256 @@
+/*--------------
+ common styles utilities 
+ -----------------*/
+
+
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+/*-----------------------
+ header /banner
+-------------------- */
+header {
+    color: #FFFFFF;
+    background-color: #161616;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.banner-text {
+    width: 50%;
+    padding-left: 106px;
+    padding-top: 64px;
+}
+
+.banner-image {
+    width: 50%;
+    align-items: center
+}
+
+.link-button {
+    text-decoration: none;
+    background-color: #DD0000;
+    width: 187px;
+    height: 56px;
+    padding: 16px 25px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+
+
+/*---------------------
+            main 
+--------------------------- */
+
+main {
+    margin-top: 130px;
+    margin-bottom: 130px;
+    display: flex;
+    border: #161616;
+    justify-content: center;
+}
+
+
+/* ----- nav ---- */
+main nav {
+    width: 312px;
+    height: 312px;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #161616;
+    border-radius: 10px;
+
+}
+
+main nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+main nav li {
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background-color: white;
+}
+
+nav li:hover {
+    background-color: rgb(243, 241, 142);
+}
+
+main nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+#mediam-nav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+/*-----------------
+             blogs 
+--------------------------------*/
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.blog {
+    width: 312px;
+    height: 380px;
+    border: #dbdbdb 1px solid;
+    border-radius: 10px;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+
+.transfer {
+    text-align: center;
+    font-size: 18px;
+    width: 100px;
+    border: 1px black solid;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.blog-info {
+    padding: 10px;
+}
+
+
+/*--- view all -- */
+#view-all {
+    text-align: center;
+    display: none;
+}
+
+/*----------------------
+             footer
+  -------------------------------- */
+
+
+footer {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: 10px;
+}
+
+footer h2 {
+    font-size: 40px;
+
+    padding-top: 122px;
+    padding-bottom: 45px;
+}
+
+hr {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/*---------------
+ media queriy styles 
+ ---------------*/
+
+/* Mobile divise */
+@media only screen and (max-width:688px) {
+    header {
+        width: 100%;
+    }
+
+    header,
+    .blogs,
+    {
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+header,
+main,
+main .blogs,
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+/* Tablate divises */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    header {
+        width: 100%;
+    }
+
+
+
+    main,
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    main,
+    .blog,
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    main nav {
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+    }
+
+    main nav ul {
+        flex-direction: row;
+        align-items: center
+    }
+
+    #view-all {
+        display: contents;
+    }
+}

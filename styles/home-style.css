@@ -152,6 +152,10 @@ main nav li a {
     display: none;
 }
 
+.UC_match {
+    align-items: center;
+}
+
 /*----------------------
              footer
   -------------------------------- */
